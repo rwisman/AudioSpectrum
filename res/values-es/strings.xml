@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AudioSpectrum</string>
+	<string name="left_side">\tExtremo izquierdo de las muestras.</string>
+	<string name="right_side">\tExtremo derecho de muestras.</string>
+	<string name="auto_range">\tAuto rango intercambio de amplitud.</string>
+	<string name="fft">\tDeterminar la frecuencia dominante (FFT).</string>
+	<string name="help">\tAyuda e información.</string>
+	<string name="reset_graph">\tRestablecer ventana de tiempo completo muestra grabada.</string>
+	<string name="linear">\tCambie entre lineal o escala logarítmica.</string>
+	<string name="range_label">Magnitud</string>
+	<string name="domain_label">Frecuencia</string>
+	<string name="interval_label">Intervalo</string>	
+	<string name="recommended">Tamaño recomendado ventana: </string>	
+	<string name="frequency">Frecuencia: </string>
+	<string name="window">Ventana: </string>
+	<string name="samples">Muestras: </string>
+	<string name="fft_title">FFT resultados</string>
+		<string name="info">AudioSpectrum puede determinar el espectro de frecuencias de audio de un archivo WAV seleccionado o un segmento de audio grabada por AudioTime o AudioTime+\n
+						Gestos: \n
+						Un toque del dedo para mostrar una frecuencia específica.\n
+						Dos dedos de zoom dentro y fuera.\n
+						Uno de arrastrar el dedo a la izquierda oa la derecha.\n
+	</string>
+	
+</resources>

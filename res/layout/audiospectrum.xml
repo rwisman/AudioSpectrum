@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/sample_activity"
+    android:orientation="vertical" >
+
+    <com.androidplot.xy.XYPlot
+        android:id="@+id/spectrumPlot"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        androidPlot.domainLabel="Hz"
+        androidPlot.domainLabelWidget.labelPaint.textSize="@dimen/domain_label_font_size"
+        androidPlot.graphWidget.domainGridLinePaint.alpha="0"
+        androidPlot.graphWidget.domainLabelPaint.textSize="@dimen/domain_tick_label_font_size"
+        androidPlot.graphWidget.domainOriginLabelPaint.textSize="@dimen/domain_tick_label_font_size"
+        androidPlot.graphWidget.domainOriginLinePaint.alpha="0"
+        androidPlot.graphWidget.gridBackgroundPaint.color="#ffffff"
+        androidPlot.graphWidget.marginBottom="25dp"
+        androidPlot.graphWidget.marginLeft="15dp"
+        androidPlot.graphWidget.marginRight="10dp"
+        androidPlot.graphWidget.marginTop="20dp"
+        androidPlot.graphWidget.rangeLabelPaint.textSize="@dimen/range_tick_label_font_size"
+        androidPlot.graphWidget.rangeOriginLabelPaint.textSize="@dimen/range_tick_label_font_size"
+        androidPlot.legendWidget.heightMetric.value="0dp"
+        androidPlot.legendWidget.iconSizeMetrics.heightMetric.value="15dp"
+        androidPlot.legendWidget.iconSizeMetrics.widthMetric.value="15dp"
+        androidPlot.legendWidget.positionMetrics.anchor="right_bottom"
+        androidPlot.legendWidget.textPaint.textSize="@dimen/legend_text_font_size"
+        androidPlot.rangeLabel="@string/range_label"
+        androidPlot.rangeLabelWidget.labelPaint.textSize="@dimen/range_label_font_size"
+        androidPlot.title="AudioSpectrum"
+        androidPlot.titleWidget.labelPaint.textSize="@dimen/title_font_size" />
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:background="#FFAAAAAA"
+        android:layout_gravity="bottom|center"
+        android:gravity="bottom|center"
+        android:orientation="horizontal"
+        >
+
+
+            <ImageButton
+                android:id="@+id/btnLinearLog"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:adjustViewBounds="true"
+                android:background="#00000000"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter"
+                android:src="@drawable/linear"
+                android:state_enabled="true" 
+                android:tag="isChecked" />
+            
+            <ImageButton
+                android:id="@+id/btnReset"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:adjustViewBounds="true"
+                android:background="#00000000"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter"
+                android:src="@drawable/reset_graph_toggle"
+                android:state_enabled="true" />
+
+            <ImageButton
+                android:id="@+id/btnLeft"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:adjustViewBounds="true"
+                android:background="#00000000"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter"
+                android:src="@drawable/left_side_toggle"
+                android:state_enabled="true" />
+
+            <ImageButton
+                android:id="@+id/btnRight"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:adjustViewBounds="true"
+                android:background="#00000000"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter"
+                android:src="@drawable/right_side_toggle"
+                android:state_enabled="true" />
+
+            <ImageButton
+                android:id="@+id/btnHelp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:adjustViewBounds="true"
+                android:background="#00000000"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter"
+                android:src="@drawable/help"
+                android:state_enabled="true" />
+	</LinearLayout>
+
+</LinearLayout>

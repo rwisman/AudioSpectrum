@@ -1,0 +1,5 @@
+AudioSpectrum displays the spectrum of a WAV file.<br/>
+<b>Gestures select view areas:</b><br/>
+Tap one finger to mark a frequency.<br/>
+Two finger pinch or squeeze to zoom.<br/>
+Drag to pan left and right.<br/>

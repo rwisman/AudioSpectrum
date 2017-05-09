@@ -1,0 +1,264 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="Author" content="Raymond F. Wisman">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link REL="stylesheet" href="basic.css" type="text/css">
+<link rel="icon" 
+      type="image/ico" 
+      href="favicon.ico"/>
+<title>AudioSpectrum</title>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#0000FF" vlink="#551A8B" 
+alink="#FF0000">
+
+	<table border="0" cellpadding="10" cellspacing="0">
+		<tr>
+			<td><img border="0" src="icon.png" align="left" hspace="0" style="border: 8px solid #FFFFFF; background-color: #FFFFFF"></td>
+			<td><font size="5"><b>Mobile Science </b></font>&nbsp;<a href="javascript:(function(){l=location.href;if(l.indexOf('translate')>=0){l=decodeURIComponent(l.replace(/^.*[&?](trurl|url|u)=/,'').replace(/[&?].*$/,''))};s=document.selection?document.selection.createRange().text:window.getSelection?window.getSelection().toString():document.getSelection?document.getSelection():'';lw=(s=='')?'http://translate.google.com/translate?u='+encodeURIComponent(l)+'&sl=auto&tl=es&anno=0':'http://translate.google.com/translate_t?text='+s+'&sl=auto&tl=es';wt=window.open(lw);if(window.focus){wt.focus()};})()" style="text-decoration: none"><font size="2">Español</font></a><font size="5"><b><br>
+			AudioSpectrum</b></font> 
+	<br>
+	by Ray Wisman and Kyle Forinash<br>Indiana University SE. 
+
+						<h2><font size="4">Google Play</font><span style="font-size: 16pt"> 
+						- </span><font size="4">
+						<a href="https://play.google.com/store/apps/details?id=edu.ius.audiospectrum">AudioSpectrum</a></font></h2>
+						<h2><font size="4">YouTube</font><span style="font-size: 16pt"> 
+						- </span><font size="4">
+						<a href="http://www.youtube.com/watch?v=lJergeMW-Xc">http://www.youtube.com/watch?v=lJergeMW-Xc</a></font></h2>
+			</td>
+		</tr>
+	</table>
+	<blockquote>
+					<h2><span style="font-size: 16pt">Description</span></h2>
+					
+						<p><i>AudioSpectrum</i> displays the frequency spectrum 
+						of a WAV file or audio sourced from <i>AudioTime </i>or
+						<i>AudioTime+.</i></p>
+						<ul>
+							<li>The spectrum is displayed in linear and 
+							logarithmic scales. </li>
+							<li>Panning and zooming allow exploration of the 
+							fine details of the spectrum.</li>
+							<li>Ensemble spectral averaging is used to construct 
+							the spectrum of continuous audio too large for a 
+							single FFT transformation. </li>
+						</ul>
+						<p>The application is designed for use in science 
+						education experiments that:</p>
+						<ul>
+							<li>investigate the frequency components of sound,</li>
+							<li>determine the dominant frequency of audio.</li>
+						</ul>
+						<p>The screen shot below shows the spectrum on a logarithmic scale of audio having a dominant frequency of 160 Hz. </p>
+				
+
+		<table border="1" cellpadding="10" cellspacing="0">
+			<tr>
+				<td>
+				<img border="0" src="screenshot.png" width="1280" height="800"></td>
+			</tr>
+		</table>
+	
+	<blockquote>
+		<p>&nbsp;</p>
+	</blockquote>
+	<table border="0" cellspacing="0">
+		<tr>
+			<td><b>Controls and Displays</b><blockquote>
+				<p><i>AudioSpectrum</i> displays the frequency spectrum 
+						of a WAV file or audio sourced from <i>AudioTime </i>or
+						<i>AudioTime+.</i><br/>
+				<br/>Gestures select graph areas</p>
+				<blockquote>
+					<table border="1" cellpadding="10" cellspacing="0">
+						<tr>
+							<td>Tap one finger to mark a column with its 
+							frequency.<p>Two finger pinch or squeeze to zoom.</p>
+					<p>Drag to pan left and right.</p>
+							</td>
+						</tr>
+					</table>
+				</blockquote>
+				<p>Button function</p>
+				<blockquote>
+					<table border="1" cellpadding="10" cellspacing="0">
+						<tr>
+							<td>
+							<p>
+							<img border="0" src="left_side.png" width="50" height="50">&nbsp;&nbsp; 
+							Left&nbsp;&nbsp; &nbsp;&nbsp;
+							<img border="0" src="right_side.png" width="50" height="50">&nbsp; 
+							Right end of samples.</p>
+							<p>
+							<img border="0" src="linear.png" width="50" height="50">&nbsp;&nbsp; 
+							Linear&nbsp;
+							<img border="0" src="log.png" width="50" height="50">&nbsp; 
+							Log scales.</p>
+							<p>
+							<img border="0" src="reset_graph.png" width="50" height="50">&nbsp;&nbsp; Reset 
+				window to full.</p>
+							<p>
+							<img border="0" src="help.png" width="50" height="50">&nbsp;&nbsp;&nbsp; 
+							Help and information.</p></td>
+						</tr>
+					</table>
+					<p>*Uses the largest FFT window that fits within the display 
+					window. Larger FFT window sizes give more low frequency 
+					resolution but less temporal resolution.</p>
+				</blockquote>
+			</blockquote>
+			</td>
+		</tr>
+		</table>
+</blockquote><p><b>Some uses</b></p>
+<blockquote>
+	<b>WAV file - </b>Files recorded as WAV formatted files can be examined by 
+	starting <i>AudioSpectrum</i> directly and using a file manager to select 
+	the file to analyze.<p>&nbsp;</p>
+	<b>Doppler shift - </b>Classic case: a train horn sound is a higher 
+	frequency when approaching than receding.<p>Compare frequency spectrum of 
+	stationary sound source with the approaching and receding spectrums.</p>
+	<p>For testing, a constant frequency sound can be generated by a <i>waveform generator</i> app, using one phone as a 
+	sound source the other to record and analyze. </p>
+	<p>
+	Procedure:</p>
+	<ol>
+		<li>Record a stationary sound source using <i>AudioTime </i>or <i>
+		AudioTime+ </i>apps. </li>
+		<li>Zoom and pan to display the audio segment containing the stationary 
+		sound source.</li>
+		<li>Find dominant frequency by FFT or
+		<img border="0" src="fft.png" width="50" height="50"> button.</li>
+		<li>Select <i>View spectrum</i> when FFT results displayed, <i>
+		AudioSpectrum </i>will display the frequency spectrum.</li>
+		<li>Repeat the above steps for a moving sound source. </li>
+	</ol>
+	<p>Below screen shots illustrate Doppler shift of sound source swinging on a 
+	pendulum. </p>
+	<ol>
+		<li>Stationary sound source recorded audio.</li>
+		<li>Stationary sound source spectrum centered closely around dominant 
+		frequency of 1838.</li>
+		<li>Moving sound source recorded audio. Notice the increased amplitude 
+		as the sound source moves closer to the microphone.</li>
+		<li>Moving sound source spectrum with lower frequencies to the left of 
+		1838 Hz as source recedes from microphone and higher frequencies to the 
+		right of 1838 Hz as source approaches microphone.</li>
+	</ol>
+	<p><img border="0" src="doppler1.png" width="1280" height="800"></p>
+	<p><img border="0" src="Doppler2.png" width="1280" height="800"></p>
+	<p><img border="0" src="Doppler3.png" width="1280" height="800"></p>
+	<p><img border="0" src="doppler5.png" width="1280" height="800"></p>
+</blockquote>
+<p><b>Technical details</b></p>
+	<blockquote>
+		<p>Discrete Fourier Transform - A standard FFT is performed on sample 
+		sizes of 65536 or less. Ensemble spectral averaging is used to construct 
+							the spectrum of continuous audio too large for a 
+							single FFT transformation. The frequency spectrum 
+		for groups of 65536 samples is computed, normalized for that sample 
+		group, summed and finally averaged with the spectrum of other groups of 
+		65536 samples. While allowing large sample sizes to be analyzed, when 
+		audio is long and varied the resulting spectrum magnitude or power is 
+		correspondingly reduced (i.e. no normalized frequency has magnitude of 
+		1). One possible solution is to open the file in <i>AudioTime</i> or<i> 
+		AudioTime+</i> and perform the FFT on selected segments.</p>
+		<p>File format -Reads a standard WAV file format with no 
+		compression, 44.1 KHz, one channel.</p>
+		<p>Spectrum display - Only 400 frequencies are displayed at a time, any 
+		greater number of frequencies are aggregated displaying only the 
+		greatest magnitude within a set. For example, with 22050 frequencies to 
+		display, the maximum magnitude of consecutive groups of 22050/400 = 55 
+		are displayed. The frequency resolution is controlled by zooming. </p>
+	</blockquote>
+	<p><b>References for further examination of Mobile Science apps and use</b></p>
+	<blockquote>
+		<p>R. Wisman, K. Forinash; 'Science in Your Pocket', International 
+		Journal on Hands-on Science (IJHSCI) Vol. 1, No. 1, September (2008) 
+		p7-15.</p>
+		<p>K. Forinash, R. Wisman, &#8216;Mobile Science &#8211; Acceleration&#8217;. 
+		Measures acceleration. Apple App 
+		Store (https://itunes.apple.com/us/app/mobile-science-acceleration/id389821809?mt=8).</p>
+		<p>K. Forinash, R. Wisman, &#8216;Mobile Science &#8211; Temperature&#8217;. 
+		Measures temperature using a simple circuit attached to the headset jack 
+		of an iOS mobile device. Apple App 
+		Store (http://itunes.apple.com/us/app/mobile-science-temperature/id467423322?mt=8).
+		</p>
+		<p>R. Wisman and K. Forinash, &#8216;Mobile Science - Ohmmeter&#8217;. Application 
+		to measure resistance using a simple circuit attached to the headset 
+		jack of an iOS mobile device. Apple App 
+		Store, April 2013. https://itunes.apple.com/us/app/ohmmeter/id628027479?mt=8</p>
+		<p>K. Forinash and R. Wisman, &#8216;Mobile Science &#8211; Ohmmeter+&#8217;. Converts 
+		resistance to other units determined by arbitrary user defined equation. 
+		Application measures resistance using a simple circuit attached to the 
+		headset jack of an iOS mobile device. August 2013. https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=685431874&amp;mt=8</p>
+		<p>R. Wisman and K. Forinash, 'Mobile Science - AudioTime'. Records, 
+		displays, saves, plays and finds dominant frequency of selected audio. 
+		November 2013. https://play.google.com/store/apps/details?id=edu.ius.audiotime</p>
+		<p>R. Wisman and K. Forinash, 'Mobile Science - AudioTime+'. AudioTime+ 
+		can time events by sound or photo gates and records, displays, saves, 
+		plays and finds dominant frequency of selected audio. 
+		November 2013. https://play.google.com/store/apps/details?id=edu.ius.audiotimeplus</p>
+		<p>R. Wisman and K. Forinash, 'Mobile Science - AudioSpectrum'. 
+		AudioSpectrum displays the frequency spectrum of a WAV file or audio 
+		sourced from AudioTime or AudioTime+ apps. 
+		December 2013. https://play.google.com/store/apps/details?id=edu.ius.audiospectrum</p>
+		<p>R. Wisman, K. Forinash; 'Mobile Science', Ubiquitous Learning; An 
+		International Journal, Vol. 3 No. 1 (2011) p21-34.</p>
+		<p>R. Wisman and K. Forinash, &#8216;Smartphones as portable oscilloscopes for 
+		physics labs&#8217;, The Physics Teacher, Vol. 50 No. 4 (2012) p242.</p>
+		<p>K. Forinash and R. Wisman, &#8216;Smartphones - Experiments with an 
+		External Thermistor Circuit&#8217;, The Physics Teacher, Vol. 50 No. 9 (2012) 
+		p566.</p>
+		<p>K. Forinash and R. Wisman, &#8216;Smartphones as Data Collection Tools for 
+		Science Education&#8217;, International Newsletter on Physics Education, Vol. 
+		64 (2013). </p>
+		<p>K. Forinash and R. Wisman, 'Using smartphones as science laboratory 
+		instruments', American Association of Physics Teachers, Portland, July 
+		13-17, 2013</p>
+	</blockquote>
+	<p><b>Acknowledgements</b></p>
+	<blockquote>
+		<p>Columbia University MEAPsoft for Java version of FFT.</p>
+		<p>Douglas L. Jones, University of Illinois at Urbana-Champaign, for 
+		original FFT version in C. http://cnx.rice.edu/content/m12016/latest/</p>
+		<p>AndroidPlot.com for plotting library and examples.</p>
+	</blockquote>
+<p><b>Legalese</b></p>
+	<blockquote>
+		<p>This program is free software: you can redistribute it and/or modify<br>
+		it under the terms of the GNU General Public License as published by<br>
+		the Free Software Foundation, either version 3 of the License, or<br>
+		(at your option) any later version.</p>
+	</blockquote>
+	<p><b>Contacts</b></p>
+	<blockquote>
+		<p>R. Wisman (<script language="javascript">
+document.write('<a href="mailto:rwisman');
+document.write('@');
+document.write('ius.edu">rwisman');
+document.write('@');
+document.write('ius.edu</a>');
+      </script>
+) for 
+		software questions.</p>
+		<p>K. Forinash (<script language="javascript">
+document.write('<a href="mailto:kforinas');
+document.write('@');
+document.write('ius.edu">kforinas');
+document.write('@');
+document.write('ius.edu</a>');
+      </script>
+) 
+		for physics or educational use questions.</p>
+	</blockquote>
+
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+<h3>Mobile Science - AudioSpectrum</h3>
+Version 1.0<br>
+Copyright 2013<br>
+http://www.ius.edu/rwisman/AudioSpectrum<br/><br/><br/>
+
+
